@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/Image_files/Background.img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;        
+    background-attachment: fixed;   
+    background-position: center;        
+}
+header {
+    background: linear-gradient(135deg, #000, #444);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    height: 30px;
+}
+header h1 {
+    position: absolute;
+    margin: 0;
+}
+h4{
+    color: aliceblue;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: dotted;
+}
+.Home:hover {
+    color: red;
+}
+.Services:hover {
+    color: red;
+}
+.Cars:hover {
+    color: red;
+}
+.Brochure:hover {
+    color: red;
+}
+.counseling:hover {
+    color: red;
+}
+.aboutus:hover{
+    color: red;
+}
+.qna:hover{
+    color: red;
+}
+.heading {
+    text-align: center;
+    color: antiquewhite;
+}
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+.intro h2 {
+    font-size: 32px;
+    color: antiquewhite;
+}
+.intro p {
+    font-size: 18px;
+    color: antiquewhite;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+.team h2 {
+    font-size: 32px;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.team-member {
+    background: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+    transition: transform 0.2s;
+}
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #ff6600;
+}
+.team-member h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.team-member p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-info {
+    text-align: center;
+    margin: 40px 0;
+}
+.contact-info h2 {
+    font-size: 32px;
+    color: antiquewhite;
+}
+.contact-info p {
+    font-size: 18px;
+    color: antiquewhite;
+}
+.contact-info a {
+    color: #0078d4;
+    font-weight: bold;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #333;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+footer p {
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+}

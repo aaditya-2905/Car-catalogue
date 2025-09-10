@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/Image_files/Background.img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;        
+    background-attachment: fixed;   
+    background-position: center;        
+}
+header {
+    background: linear-gradient(135deg, #000, #444);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    height: 30px;
+}
+header h1 {
+    position: absolute;
+    margin: 0;
+}
+h4{
+    color: aliceblue;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: dotted;
+}
+.Home:hover {
+    color: red;
+}
+.Services:hover {
+    color: red;
+}
+.Cars:hover {
+    color: red;
+}
+.Brochure:hover {
+    color: red;
+}
+.counseling:hover {
+    color: red;
+}
+.aboutus:hover{
+    color: red;
+}
+.qna:hover{
+    color: red;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    opacity: 90%;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+h1 {
+    font-size: 28px;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 10px;
+}
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:focus,
+textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+.btn {
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 16px;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+    background-color: #1a6c96;
+    transform: scale(1.1);
+}
+.success-message {
+    display: none;
+    margin-top: 20px;
+    color: #27ae60;
+    font-size: 16px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+footer {
+    background: #333;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+footer p {
+    font-size: 14px;
+}

@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header {
+    background: linear-gradient(135deg, #000, #444);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    height: 30px;
+}
+.Sedan {
+    height: 150px;
+    width: 250px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+header h1 {
+    position: absolute;
+    margin: 0;
+}
+h4{
+    color: aliceblue;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: dotted;
+}
+.Home:hover {
+    color: red;
+}
+.Services:hover {
+    color: red;
+}
+.Cars:hover {
+    color: red;
+}
+.Brochure:hover {
+    color: red;
+}
+.counseling:hover {
+    color: red;
+}
+.heading {
+    text-align: center;
+    color: white;
+}
+.qna:hover{
+    color: red;
+}
+.aboutus:hover{
+    color: red;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 110px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.card .image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.card h2 {
+    font-size: 1.6rem;
+    margin: 20px;
+    color: #34495e;
+}
+.card p {
+    margin: 0 20px 20px;
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+a.btn {
+    display: block;
+    margin: 10px 20px;
+    padding: 12px 20px;
+    background-color: #070809;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+a.btn:hover {
+    background-color: #1a6c96;
+    transform: scale(1.05);
+}
+footer {
+    background: #333;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+footer p {
+    font-size: 14px;
+}
+body{
+    background-image: url(/Image_files/Background.img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

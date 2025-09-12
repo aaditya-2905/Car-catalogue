@@ -8,7 +8,7 @@ html {
 }
 
 .background {
-    background: url('/Image_files/Background.img.jpg') no-repeat center center/cover;
+    background: url('../Image_files/Background.img.jpg') no-repeat center center/cover;
     position: fixed;
     top: 0;
     left: 0;

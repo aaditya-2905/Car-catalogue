@@ -77,7 +77,7 @@ nav ul li a {
     color: #e7222e;
 }
 body{
-    background-image: url(/Image_files/Background.img.jpg);
+    background-image: url(../Image_files/Background.img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -31,7 +31,7 @@ nav ul li a {
     text-decoration: dotted;
 }
 body {
-    background-image: url(/Image_files/Background.img.jpg);
+    background-image: url(../Image_files/Background.img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;  

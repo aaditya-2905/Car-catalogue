@@ -43,12 +43,17 @@ pipeline {
 
         stage('Trigger CodePipeline') {
             steps {
-                sh '''
-                echo "Triggering CodePipeline..."
-                aws codepipeline start-pipeline-execution \
-                --name $PIPELINE_NAME \
-                --region $AWS_REGION
-                '''
+                withCredentials([[
+                    $class: 'AmazonWebServicesCredentialsBinding',
+                    credentialsId: 'aws-creds'
+                ]]) {
+                    sh '''
+                    echo "Triggering CodePipeline..."
+                    aws codepipeline start-pipeline-execution \
+                    --name $PIPELINE_NAME \
+                    --region $AWS_REGION
+                    '''
+                }
             }
         }
     }

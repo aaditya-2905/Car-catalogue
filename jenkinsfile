@@ -9,11 +9,13 @@ pipeline {
     stages {
         stage('Deploy to ECS via CodePipeline') {
             steps {
-                sh '''
-                aws codepipeline start-pipeline-execution \
-                  --name $PIPELINE_NAME \
-                  --region $AWS_REGION
-                '''
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-creds']]) {
+                    sh '''
+                    aws codepipeline start-pipeline-execution \
+                      --name $PIPELINE_NAME \
+                      --region $AWS_REGION
+                    '''
+                }
             }
         }
     }

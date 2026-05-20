@@ -21,5 +21,5 @@ RUN mkdir -p /var/cache/nginx /var/run/nginx /var/log/nginx && \
 
 USER appuser
 
-EXPOSE 8080
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

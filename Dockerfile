@@ -19,7 +19,7 @@ RUN mkdir -p /var/cache/nginx /var/run/nginx /var/log/nginx && \
     /var/log/nginx \
     /usr/share/nginx/html
 
-USER appuser
+# USER appuser
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

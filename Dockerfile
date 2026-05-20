@@ -4,7 +4,7 @@ LABEL version="1.0" maintainer="zalaaadityainh9@gmail.com"
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy custom nginx config
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 COPY ./ /usr/share/nginx/html/
 
